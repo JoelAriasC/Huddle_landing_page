@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+  --white: #f2f2f2;
+}
+
+body {
+  background-color: var(--Violet);
+  background-image: url(../assets/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 auto;
+  max-width: 48rem;
+}
+
+.logo {
+  max-width: 8rem;
+  /* margin-bottom: 2.5rem; */
+}
+
+.illustration {
+  max-width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.container_info {
+  color: var(--white);
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.button {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--white);
+  text-decoration: none;
+  font-size: 0.7rem;
+  margin: 0 auto;
+  padding: 0.4rem 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 8px -3px rgba(0, 0, 0, 0.788);
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: var(--Soft-Magenta);
+  color: var(--white);
+  transition: all 0.5s;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.fa-brands {
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.fa-brands:hover {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
+  transition: all 0.5s;
+}
+
+.fa-facebook-f {
+  padding: 6px 9px;
+}
+
+.fa-twitter {
+  padding: 6px;
+}
+
+.fa-instagram {
+  padding: 6px 7px;
+}
+
+@media (min-width: 900px) {
+  body {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1300px) {
+  body {
+    background-image: url(../assets/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    max-width: 81rem;
+    padding: 2rem;
+  }
+
+  .logo {
+    max-width: 12rem;
+  }
+
+  .illustration {
+    max-width: 37rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: start;
+    padding-right: 2rem;
+    margin-top: 2rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    margin: 0;
+    max-width: max-content;
+    padding: 0.8rem 4rem;
+    border-radius: 3rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+  }
+
+  .fa-brands {
+    font-size: 1rem;
+  }
+
+  .fa-facebook-f {
+    padding: 8px 11px;
+  }
+
+  .fa-twitter {
+    padding: 8px;
+  }
+
+  .fa-instagram {
+    padding: 8px 9px;
+  }
+}
